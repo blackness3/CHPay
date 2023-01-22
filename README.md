@@ -1,6 +1,6 @@
 # CHPay
 
-···
+```
 location / {
  if (!-e $request_filename) {
    rewrite ^/(.[a-zA-Z0-9\-\_]+).html$ /index.php?mod=$1 last;
@@ -13,4 +13,4 @@ location ^~ /plugins {
 location ^~ /includes {
   deny all;
 }
-···
+```
